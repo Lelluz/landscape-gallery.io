@@ -1,0 +1,102 @@
+@import "_colors";
+@import "_fonts";
+
+body {
+  background: $black;
+  font-family: "blackchanceryregular";
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: center;
+  background: linear-gradient(85deg, $orange -50%, $light 110%);
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: solid 3px $light;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, $orange 0%, $light 100%);
+  h1 {
+    font-size: 3.8rem;
+    letter-spacing: 0.3rem;
+  }
+  p {
+    padding-top: 60px;
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+  }
+}
+
+nav {
+  padding: 20px 0;
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      padding: 0 10px;
+    }
+  }
+  span {
+    font-size: 1.5rem;
+  }
+  svg {
+    width: 22px;
+    height: 22px;
+    fill: $light;
+  }
+}
+
+.grid {
+  margin: 0 auto;
+  padding: 70px 0;
+  -webkit-box-shadow: 0px 0px 200px -180px $shadow;
+  -moz-box-shadow: 0px 0px 200px -180px $shadow;
+  box-shadow: 0px 0px 200px -180px $shadow;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item {
+  padding: 20px;
+  img {
+    border-radius: 0.1rem;
+    display: block;
+    max-width: 100%;
+    &:not(.loaded) {
+      visibility: hidden;
+    }
+  }
+}
+
+footer {
+  padding: 60px;
+  background: linear-gradient(to left, $orange 0%, $light 100%);
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 767px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
+}
