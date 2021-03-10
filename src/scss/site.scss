@@ -15,16 +15,18 @@ header {
   margin: 0 auto;
   padding: 80px 0;
   text-align: center;
-  background: linear-gradient(85deg, $orange -50%, $light 110%);
-  -webkit-text-fill-color: transparent;
-  text-decoration: none;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   border-bottom: solid 3px $light;
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, $orange 0%, $light 100%);
+  h1, p, a, span {
+    background: linear-gradient(85deg, $orange -50%, $light 110%);
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    -webkit-background-clip: text;
+  }
   h1 {
     font-size: 3.8rem;
+    line-height: 4.5rem;
     letter-spacing: 0.3rem;
   }
   p {
