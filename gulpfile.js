@@ -5,7 +5,7 @@ const csso = require("gulp-csso");
 const sourcemaps = require("gulp-sourcemaps");
 const browserSync = require("browser-sync").create();
 
-const htmlPath = "public/*.html";
+const htmlPath = "*.html";
 const scssPath = "src/scss/**/*.scss";
 
 function scss() {
@@ -15,7 +15,7 @@ function scss() {
     .pipe(prefix())
     .pipe(csso())
     .pipe(sourcemaps.write("."))
-    .pipe(dest("public/css/"))
+    .pipe(dest("css/"))
     .pipe(browserSync.stream());
 }
 
@@ -23,7 +23,7 @@ exports.scss = scss;
 exports.default = function() {
   browserSync.init({
 		server: {
-			baseDir: "./public",
+			baseDir: ".",
 			index: "/index.html"
 		}
 	});
