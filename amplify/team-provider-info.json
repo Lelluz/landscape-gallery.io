@@ -10,6 +10,12 @@
       "StackName": "amplify-mylandscapesgallery-dev-194410",
       "StackId": "arn:aws:cloudformation:eu-central-1:795642943553:stack/amplify-mylandscapesgallery-dev-194410/9d555640-81fc-11ec-991e-02489ee4113a",
       "AmplifyAppId": "d38kkns1vj7sq3"
+    },
+    "categories": {
+      "auth": {
+        "mylandscapesgallery2f218b43": {},
+        "true": {}
+      }
     }
   }
 }

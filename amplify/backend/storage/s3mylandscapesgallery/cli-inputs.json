@@ -1,0 +1,16 @@
+{
+  "resourceName": "s3mylandscapesgallery",
+  "policyUUID": "9e722e43",
+  "bucketName": "mylandscapesgalleryf76cda54e222480b962709a72805",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
