@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mylandscapesgallery-dev-194410-authRole",
+      "UnauthRoleArn": "arn:aws:iam::795642943553:role/amplify-mylandscapesgallery-dev-194410-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::795642943553:role/amplify-mylandscapesgallery-dev-194410-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-mylandscapesgallery-dev-194410-deployment",
+      "UnauthRoleName": "amplify-mylandscapesgallery-dev-194410-unauthRole",
+      "StackName": "amplify-mylandscapesgallery-dev-194410",
+      "StackId": "arn:aws:cloudformation:eu-central-1:795642943553:stack/amplify-mylandscapesgallery-dev-194410/9d555640-81fc-11ec-991e-02489ee4113a",
+      "AmplifyAppId": "d38kkns1vj7sq3"
+    }
+  }
+}

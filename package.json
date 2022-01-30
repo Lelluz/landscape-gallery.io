@@ -1,31 +1,38 @@
 {
-  "name": "personal-gallery",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "my-landscapes-gallery",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Lelluz/personal-gallery.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Lelluz/personal-gallery/issues"
-  },
-  "homepage": "https://github.com/Lelluz/personal-gallery#readme",
-  "devDependencies": {
-    "browser-sync": "^2.26.14",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-csso": "^4.0.1",
-    "gulp-dart-sass": "^1.0.2",
-    "gulp-sourcemaps": "^3.0.0"
-  },
-  "browserslist": [
-    "last 2000 version",
-    "not dead"
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
